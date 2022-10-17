@@ -1,0 +1,109 @@
+﻿/*Reset*/
+/*#01A499*/
+*{
+    margin:0; 
+    padding:0; 
+    box-sizing:border-box;
+}
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+    font-size:1.5rem;
+    text-align:center;
+    font-weight:400;
+    margin-bottom:2rem;
+    margin-top:2rem;
+   
+}
+h4 {
+    font-weight: 500;
+}
+.container {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin-right: auto;
+    margin-top : 1rem; 
+    margin-bottom: 1rem; 
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+   
+    border-radius : .75rem;
+   
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.form-group-input h4{
+    margin-top: 1rem;
+}
+
+.form-input{
+    display:flex;
+    flex-direction:column;
+    padding-top:0.5rem; 
+    padding-bottom:0.5rem; 
+}
+.form-input > input {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: .75rem;
+    border: 1px solid black;
+}
+.form-input > input:focus {
+    outline: none;
+    /*   border: 2px solid #01A499;*/
+        
+    box-shadow: 0 0 0 2px #01A499;
+    transition: box-shadow ease-in-out .25s;
+}
+.form-dropdown{
+    display:flex;
+    flex-direction:column;
+    padding-top:0.5rem; 
+    padding-bottom:0.5rem; 
+}
+.form-dropdown > select {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border-radius: .75rem;
+    cursor:pointer;
+}
+.form-dropdown > select:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #01A499;
+    transition: box-shadow ease-in-out .25s;
+}
+.container > input {
+    width: 50%;
+    padding: .5rem;
+    border-radius: 1rem;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.container > input:hover {
+    outline: none;
+    box-shadow: 0 0 0 2px #01A499;
+    transition: box-shadow ease-in-out .25s;
+}
+
+.error-list {
+    color:red; 
+    margin-top:0.5rem; 
+    margin-left: 1rem;
+    font-weight:400;
+    font-size: .90rem;
+}
+.error-outline {
+    outline: none;
+    box-shadow: 0 0 0 2px red;
+}
+.good-outline{
+
+}
