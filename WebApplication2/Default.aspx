@@ -70,7 +70,17 @@
                     </asp:dropdownlist>
                 </div>
             </div>
+           <h4 class="server-errors">
+                 <asp:Literal ID="ErrorName"  runat="server"></asp:Literal>
+           </h4>
+           <h4 class="server-errors">
+                <asp:Literal ID="ErrorOptions"    runat="server"></asp:Literal>
+           </h4>
+           <h4 class="server-errors">
+                <asp:Literal ID="ErrorPhone" runat="server"></asp:Literal>
+           </h4>
             <asp:Button  ID="btnEvent" Text="Submit" OnClick="btnEvent_Click" runat="server"/>
+
        </div>
     </div>         
     <h4>

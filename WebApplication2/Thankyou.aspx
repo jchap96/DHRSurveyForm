@@ -8,7 +8,7 @@
      <link rel="stylesheet" href="css/main.css"/>
 </head>
 <body>
-    <form id="form1" runat="server" class="thanks-form">
+    <form id="form" runat="server" class="thanks-form">
         <h3>
             Thank you for visiting DHR 
         </h3>

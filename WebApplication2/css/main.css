@@ -109,8 +109,30 @@ h4 {
     box-shadow: 0 0 0 2px red;
 }
 .thanks-form{
-    flex-direction:column;
-    align-items:center; 
-    justify-content:center;
+    display:flex; 
+    flex-direction:column; 
+    justify-content: center;
+    align-items:center;
+    height:100vh;
 }
+.thanks-form > a{
+    text-decoration:none;
+    color:black;
+    border: 2px black solid; 
+    border-radius: .75rem;
+    padding:0.5rem;
+    background-color:white;
+    margin-top:1rem; 
+    font-weight:400;
+    
+}
+
+.server-errors {
+    color: red;
+    margin-top: 0.5rem;
+    font-weight: 400;
+    font-size: .90rem;
+
+}
+
 

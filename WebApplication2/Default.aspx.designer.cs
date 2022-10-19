@@ -87,6 +87,33 @@ namespace WebApplication2
         protected global::System.Web.UI.WebControls.DropDownList Dropdownlist5;
 
         /// <summary>
+        /// ErrorName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal ErrorName;
+
+        /// <summary>
+        /// ErrorOptions control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal ErrorOptions;
+
+        /// <summary>
+        /// ErrorPhone control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal ErrorPhone;
+
+        /// <summary>
         /// btnEvent control.
         /// </summary>
         /// <remarks>

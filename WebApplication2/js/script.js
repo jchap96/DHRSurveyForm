@@ -2,20 +2,6 @@
 
 
 
-// If submit button is click check if the values are correct if not hightlight inputs that are not. 
-
-
-//Check if all the questions have a selected option 
-//Check if all the inputs are selected and valid with Regular Expressions
-
-// Erros for empty inputs 
-const INPUT_ERRORS = {
-    'required': false, 'name is invalid or empty': false, 'phone number is invalid or empty': false
-};
-
-//Erros for dropdowns 
-const DROPDOWN_ERRORS = { 'required': false };
-
 //Regex for Inputs
 const NAME_REGEXP = /[A-Za-z]{2,17}/;
 const PHONE_REGEXP = /[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
@@ -43,14 +29,14 @@ FORM_BTN.addEventListener('click', (e) => {
     FORM_INPUT_NAMES.forEach(input => removeErrorInputs(input));
     removeErrorInputs(FORM_INPUT_PHONE);
 
-   
+    //Checks for errors in inputs, if then form submition 
     checkFormInputs();
     checkFormDropdowns();
     if(checkError())
     e.preventDefault();
      
 })
-
+//checks if the dropdown values are selected if not add error outline and error 
 function checkFormDropdowns() {
     FORM_DROPDOWNS.forEach(dropdown => {
         if (parseInt(dropdown.value) === 0)
@@ -61,6 +47,8 @@ function checkFormDropdowns() {
         }
     });
 }
+
+//Checks first,last,phone inputs with regex 
 function checkFormInputs() {
     FORM_INPUT_NAMES.forEach(input => {
 
@@ -88,12 +76,7 @@ function checkFormInputs() {
     }
 }
 // Appends error depending on the error list 
-function createError(input,errorValue) {
-
- 
-    //if (input.classList.contains('error-outline'))
-    //    return;
-
+function createError(input, errorValue) {
 
     //Creates ul and li element and appends error class
     let ul = document.createElement('ul');
@@ -114,7 +97,8 @@ function removeErrorInputs(input) {
         input.parentElement.lastChild.remove();
     } 
 }
-// Checks overall Erros in page 
+
+// Checks overall Errors in page
 function checkError() {
     let value; 
     const name = document.querySelectorAll(".form-input  input:not(.number)");
